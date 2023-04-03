@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a54c8103ba39c4bb6c583651c066c0, type: 3}
   m_Name: Level 20
   m_EditorClassIdentifier: 
-  _moves: 18
+  _moves: 21
   _levelGoalConditions:
   - {fileID: 11400000, guid: 5fcb6a7ee4588d347a49968071eca626, type: 2}
-  - {fileID: 0}
-  _poolMap: {fileID: 2800000, guid: 3fca668ed00e398438d8d3af8597f116, type: 3}
+  - {fileID: 11400000, guid: 857ab43bc5b0d4f4f9ab5671c1d86ce3, type: 2}
+  _poolMap: {fileID: 2800000, guid: d36e06014001c3a499b9aceedd0b89f5, type: 3}
   _cellMap: {fileID: 2800000, guid: 3449621e752fc6a45aad61efeef092e1, type: 3}

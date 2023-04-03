@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: ColorIdLevelGoalCondition
   m_EditorClassIdentifier: 
   _goalAmount: 20
-  _id: 2
+  _id: 3

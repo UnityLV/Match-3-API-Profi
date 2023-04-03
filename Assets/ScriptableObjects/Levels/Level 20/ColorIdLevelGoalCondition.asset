@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e812fceaf4f33e4478e42214eca713a3, type: 3}
   m_Name: ColorIdLevelGoalCondition
   m_EditorClassIdentifier: 
-  _goalAmount: 15
-  _id: 0
+  _goalAmount: 35
+  _id: 1

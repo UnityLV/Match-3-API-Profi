@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88b68a41f1cbae241b7fa89d31a2c6eb, type: 3}
   m_Name: StateLevelGoalCondition
   m_EditorClassIdentifier: 
-  _goalAmount: 7
+  _goalAmount: 5
   _state: 103

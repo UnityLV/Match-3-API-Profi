@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ee8b800abda3a74ca1d86294c5600bc, type: 3}
   m_Name: BoostLevelGoalCondition 1
   m_EditorClassIdentifier: 
-  _goalAmount: 5
-  _type: 1005
+  _goalAmount: 6
+  _types: ed030000

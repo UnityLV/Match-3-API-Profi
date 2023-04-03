@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: BoostLevelGoalCondition
   m_EditorClassIdentifier: 
   _goalAmount: 6
-  _type: 1005
+  _types: ed030000

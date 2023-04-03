@@ -15,5 +15,6 @@ MonoBehaviour:
   _moves: 20
   _levelGoalConditions:
   - {fileID: 11400000, guid: 6e6e85982ee8ced429a37c8e89601d42, type: 2}
+  - {fileID: 11400000, guid: a2372d82f816bf34c8556e6d24684525, type: 2}
   _poolMap: {fileID: 2800000, guid: 41e43bc243deeae4ea6cfa6403e0ba7e, type: 3}
   _cellMap: {fileID: 2800000, guid: fdd6c66dcb3c6c243bad19e1f2874d5f, type: 3}
