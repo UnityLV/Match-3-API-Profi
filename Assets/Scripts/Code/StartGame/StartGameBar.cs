@@ -9,13 +9,17 @@ public class StartGameBar : MonoBehaviour
     [SerializeField] private CanvasGroup playButton;
     [SerializeField] private float duration;
     [SerializeField] private float durationBauutonFade;
+    private static bool _isFirstTime = true;
     private void Start()
     {
+        if (!_isFirstTime)
+            return;
+        _isFirstTime = false;
         bar.DOFillAmount(1, duration).SetEase(Ease.OutSine)
-            .OnKill(()=>playButton.DOFade(1,durationBauutonFade).OnKill(() => 
-            { 
-                playButton.interactable = true;
-                playButton.blocksRaycasts = true;
-            }).SetEase(Ease.InSine));
+        .OnKill(() => playButton.DOFade(1, durationBauutonFade).OnKill(() =>
+        {
+            playButton.interactable = true;
+            playButton.blocksRaycasts = true;
+        }).SetEase(Ease.InSine));
     }
 }

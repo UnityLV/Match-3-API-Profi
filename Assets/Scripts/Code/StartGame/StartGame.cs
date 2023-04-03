@@ -28,7 +28,8 @@ public class StartGame : MonoBehaviour
     }
     public void OnPlayClick()
     {
-        startGame.DOFade(0, durationFade).OnKill(() => {
+        startGame.DOFade(0, durationFade).OnKill(() =>
+        {
             _canvasController.AllDefaultPanelActivate();
             _canvasController.Setter.TurnOffCanvasGroup(startGame);
             _history.OnStartGame();
