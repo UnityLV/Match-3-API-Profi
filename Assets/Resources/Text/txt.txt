@@ -1,0 +1,54 @@
+Lara ::sad:: I`ll miss my friends.  I have nobody in my new home.
+Lara ::surprised:: Ooo! Falling Star! I have to make a wish. ** I wanna  meet a new friend!
+///
+Lara ::pensive:: I`m afraid. I need a friend!
+Bear ::idea:: Lora, I can be your friend!
+Lara ::surprised:: O, are you alive?
+Bear ::explane:: Yes. Your wish came true, because you really wanted to make friends
+Lara ::funny:: I`m very happy about this! Let`s go to fun!
+Bear ::focus:: First of all, let's get things right here. This place is too dark for a girl.
+Bear ::focus2:: Already much better, but it's still not safe to play here. We need to make a new floor.
+Lara ::sad:: But how do we do it, because I'm a little girl, not a handy adult.
+Bear ::explane:: Even little girls are capable of miracles if they really want to! It just takes a little effort
+///
+Bear ::tutorial_explane:: Combine 3 elements of the same color and collect them.
+Bear ::tutorial_explane:: Keep collecting elements to reach the goal!
+///
+Lara ::pensive:: In such a place, you definitely need to plant a few flowers. My mother says that flowers make the house cozy.
+Bear ::focus:: Your mom is right, we definitely need some beautiful flowers here.
+Lara ::funk:: The walls are breaking, something needs to be done!
+Bear ::funk:: Flowers should live in comfortable pots, and not in a room blown by all the winds. Otherwise they will all wither. We need to fix the walls.
+///
+Bear ::tutorial_explane:: Match 4 pieces of the same color in one row and get Fireworks!
+Bear ::tutorial_explane:: Keep collecting elements to reach the goal!
+///
+Lara ::sad:: It's very stuffy in here.
+Lara ::funk:: So you need to open the window, ventilate the room.
+Lara ::funk:: Oh no, the window is broken!
+Bear ::focus:: Don't worry, Laura. There is no such task that a brave girl and her faithful bear could not cope with! We'll fix this window.
+///
+///
+Lara ::funny:: How great it is. We tried very hard.
+Bear ::pensive:: We are great fellows! But there is still a lot of work ahead! Let's put a cozy rug on the floor so that no one gets their socks dirty.
+///
+Bear ::tutorial_explane:: Match 5 pieces of the same color in one row and get Bomb!
+Bear ::tutorial_explane:: Keep collecting elements to reach the goal!
+///
+Lara ::joke:: I have a lot of fun with you!
+Bear ::explane:: I can do a lot more!
+Lara ::funny:: Can you think of anything else?
+Bear ::idea:: Let's draw, shall we?
+Lara ::focus:: What a good idea! We just don't have room for that. Or we can draw on the walls! Although my mother will not be happy about this.
+Bear ::focus2:: No walls, my dear! We'll put a table and chairs here!
+///
+///
+Lara ::funny:: This chair is very comfortable to sit on.
+Bear ::idea:: And very soon we will find a real sketchbook, pencils and lots and lots of felt-tip pens on the table!
+Lara ::surprised:: I will become a real artist!
+///
+Bear ::tutorial_explane:: Make a square out of 4 chips and get a Rocket!
+Bear ::tutorial_explane:: Keep collecting elements to reach the goal!
+///
+///
+///
+///

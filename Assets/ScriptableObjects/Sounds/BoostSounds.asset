@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7628b598cee28429ebda0ce9ce6b8c, type: 3}
+  m_Name: BoostSounds
+  m_EditorClassIdentifier: 
+  _boostSounds:
+  - Type: 1001
+    Sound: {fileID: 8300000, guid: cb8869741fd90a74daa1143b49027c7a, type: 3}
+  - Type: 1002
+    Sound: {fileID: 8300000, guid: b5b703166d397374a8e96f98c9cef96a, type: 3}
+  - Type: 1003
+    Sound: {fileID: 8300000, guid: b5b703166d397374a8e96f98c9cef96a, type: 3}
+  - Type: 1004
+    Sound: {fileID: 8300000, guid: 32ef327b644528c45be42a856de85751, type: 3}
+  - Type: 1005
+    Sound: {fileID: 8300000, guid: f719071de46098e4bb6773375f6658db, type: 3}

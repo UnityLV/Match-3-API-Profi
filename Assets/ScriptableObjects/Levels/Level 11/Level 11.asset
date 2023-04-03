@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46a54c8103ba39c4bb6c583651c066c0, type: 3}
+  m_Name: Level 11
+  m_EditorClassIdentifier: 
+  _moves: 10
+  _levelGoalConditions:
+  - {fileID: 11400000, guid: 9e7beb14e83543c438221493c81a51e2, type: 2}
+  - {fileID: 11400000, guid: c7324d0f8b9599e4087b51557816b293, type: 2}
+  _poolMap: {fileID: 2800000, guid: d9301be4d8ba18146a74824486f10a81, type: 3}
+  _cellMap: {fileID: 2800000, guid: b8053bb5e22ab124b95ef2157b2072f7, type: 3}

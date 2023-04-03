@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 145f51d9a58d97244b00803a6f4b8963, type: 3}
+  m_Name: ObsticleItemMapFactory
+  m_EditorClassIdentifier: 
+  _itemPrefab: {fileID: 7794145155477631568, guid: b355d11c30d70634a8bd50458afa6abc,
+    type: 3}
+  _sprites:
+  - {fileID: 21300000, guid: be340a165cb9c8d4cb50f1deeb51d4ea, type: 3}
+  _binds: {fileID: 11400000, guid: ff28fe34887d7ef46992db1cbc7e34d0, type: 2}
