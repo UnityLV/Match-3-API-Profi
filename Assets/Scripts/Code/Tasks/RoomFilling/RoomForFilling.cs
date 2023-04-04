@@ -7,12 +7,26 @@ using UnityEngine.Events;
 public class RoomForFilling : MonoBehaviour
 {
     private const string RoomForFillingIndex = "RoomForFilling";
-    [SerializeField] private RoomItems[] roomItems;
-    [SerializeField] private RoomItems[] roomSecondItems;
+
+    public static RoomForFilling instance = null;
     [SerializeField] private CompleteTask completeTask; 
     [SerializeField] private NovelController novelController;
     private bool _isPrepared;
     private int _fillingIndex;
+
+    private static RoomService roomService;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+        DontDestroyOnLoad(gameObject);
+    }
     private void Start()
     {
         if (PlayerPrefs.HasKey(RoomForFillingIndex))
@@ -20,14 +34,18 @@ public class RoomForFilling : MonoBehaviour
             _fillingIndex = PlayerPrefs.GetInt(RoomForFillingIndex);
         }
     }
+    public void SetRooms(RoomService roomService)
+    {
+        RoomForFilling.roomService = roomService;
+    }
     public void ItemsSwitch(UnityAction onSwiched)
     {
-        roomItems[_fillingIndex].SwitchFade(onSwiched);
+        roomService.roomItems[_fillingIndex].SwitchFade(onSwiched);
         _fillingIndex++;
     }
     public void ItemsSwitchNext(UnityAction onSwiched)
     {
-        roomSecondItems[0].SwitchFade(onSwiched);
+        roomService.roomSecondItems[0].SwitchFade(onSwiched);
     }
     private void OnDestroy()
     {

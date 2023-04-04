@@ -15,8 +15,10 @@ public class StartGameBar : MonoBehaviour
         if (!_isFirstTime)
             return;
         _isFirstTime = false;
+        if(bar == null)
+            return;
         bar.DOFillAmount(1, duration).SetEase(Ease.OutSine)
-        .OnKill(() => playButton.DOFade(1, durationBauutonFade).OnKill(() =>
+        .OnKill(() => playButton?.DOFade(1, durationBauutonFade).OnKill(() =>
         {
             playButton.interactable = true;
             playButton.blocksRaycasts = true;

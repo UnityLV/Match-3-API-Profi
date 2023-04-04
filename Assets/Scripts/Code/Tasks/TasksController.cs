@@ -35,7 +35,7 @@ public class TasksController : MonoBehaviour
     [SerializeField] private TaskScriptableObject[] secondScriptableObjects;
     [SerializeField] private NovelController novelController;
     [SerializeField] private CanvasController canvasController;
-    [SerializeField] private RoomForFilling roomForFilling;
+    private RoomForFilling roomForFilling;
 
     private int _currentTask;
     private bool _isTwoActive;
@@ -49,6 +49,7 @@ public class TasksController : MonoBehaviour
     private bool isSecondTaskExecute;
     private void Start()
     {
+        roomForFilling = RoomForFilling.instance;
         _taskComplite = completeTask;
         _barRefreshed = barTask;
         _taskComplite.Initialize(OnTaskComplete);

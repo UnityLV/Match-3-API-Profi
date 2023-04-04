@@ -17,8 +17,14 @@ public class BarTask : BankDefault, IInit<BarRefreshed>
     private const string precent = "precent";
 
     private event BarRefreshed _barRefreshed;
+    private static bool isFirstTime = true;
     private void Start()
     {
+        if (!isFirstTime)
+        {
+            return;
+        }
+        isFirstTime = false;
         if (PlayerPrefs.HasKey(precent))
         {
             Add(PlayerPrefs.GetInt(precent));
@@ -36,7 +42,7 @@ public class BarTask : BankDefault, IInit<BarRefreshed>
     }
     public void RefreshBar()
     {
-        barImage.DOFillAmount((float)Value / 100, duration).OnComplete(() =>_barRefreshed?.Invoke());
+        barImage?.DOFillAmount((float)Value / 100, duration).OnComplete(() =>_barRefreshed?.Invoke());
         barText.text = Value.ToString() + "%";
         PlayerPrefs.SetInt(precent, Value);
     }
