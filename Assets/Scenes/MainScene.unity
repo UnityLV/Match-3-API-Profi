@@ -4958,15 +4958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0962aad7a0b001e47b8df086db1a211c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomItems:
-  - {fileID: 121745549}
-  - {fileID: 1728893052}
-  - {fileID: 205432816}
-  - {fileID: 200775130}
-  - {fileID: 871958904}
-  - {fileID: 161867984}
-  roomSecondItems:
-  - {fileID: 910525371}
   completeTask: {fileID: 617734679}
   novelController: {fileID: 1708860283}
 --- !u!1001 &249007733
@@ -9536,6 +9527,7 @@ GameObject:
   - component: {fileID: 527943996}
   - component: {fileID: 527943998}
   - component: {fileID: 527943997}
+  - component: {fileID: 527943999}
   m_Layer: 0
   m_Name: NavMesh
   m_TagString: Untagged
@@ -9608,6 +9600,27 @@ MonoBehaviour:
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
   m_NavMeshData: {fileID: 23800000, guid: 65c42a18766545948a152f1ed45a0c1d, type: 2}
+--- !u!114 &527943999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527943993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a7304fb2036e6246aab1435713cbae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomItems:
+  - {fileID: 121745549}
+  - {fileID: 1728893052}
+  - {fileID: 205432816}
+  - {fileID: 200775130}
+  - {fileID: 871958904}
+  - {fileID: 161867984}
+  roomSecondItems:
+  - {fileID: 910525371}
 --- !u!1 &528494357
 GameObject:
   m_ObjectHideFlags: 0
@@ -31922,7 +31935,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ea8f5aae565f4514a978f7fa78bf90e1, type: 2}
   novelController: {fileID: 1708860283}
   canvasController: {fileID: 660655100}
-  roomForFilling: {fileID: 234664752}
 --- !u!1 &1728893050
 GameObject:
   m_ObjectHideFlags: 0

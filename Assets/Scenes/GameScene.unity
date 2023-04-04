@@ -2318,6 +2318,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1238698634}
     m_Modifications:
     - target: {fileID: 483870817, guid: 4a7c1b49b2924a64e9c757d086060867, type: 3}
+      propertyPath: m_Interactable
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 483870817, guid: 4a7c1b49b2924a64e9c757d086060867, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2872,6 +2876,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 6130516e23c29a34e93e3e3644972a7b,
         type: 3}
+    - target: {fileID: 3836268076026735594, guid: 4a7c1b49b2924a64e9c757d086060867,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4643508003151439271, guid: 4a7c1b49b2924a64e9c757d086060867,
         type: 3}
       propertyPath: toolId
@@ -3640,7 +3649,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 319.92, y: -48.774}
+  m_AnchoredPosition: {x: 319.91998, y: -48.774}
   m_SizeDelta: {x: 158.26, y: 40.645}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879916604
