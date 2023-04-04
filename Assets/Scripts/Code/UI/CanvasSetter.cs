@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 namespace Assets.Scripts.Code.UI
 {
     public class CanvasSetter
@@ -18,6 +18,7 @@ namespace Assets.Scripts.Code.UI
             }
             if (newGroup == null)
                 return;
+            DOTween.Kill(CameraMovement.idCamera);
             _curentCanvas = newGroup;
             _curentCanvas.alpha = 1;
             _curentCanvas.interactable = true;

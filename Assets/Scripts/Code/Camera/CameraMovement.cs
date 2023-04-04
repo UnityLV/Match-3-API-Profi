@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 public class CameraMovement : MonoBehaviour, IDragHandler, IPointerDownHandler, IPointerUpHandler
 {
-    private const string idCamera = "Camera";
+    public const string idCamera = "Camera";
     private Camera cameraForMove;
     [SerializeField] private float duration = 1;
     [SerializeField] private float startSpeed = 3;
