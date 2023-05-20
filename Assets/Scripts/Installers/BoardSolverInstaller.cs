@@ -3,7 +3,6 @@ using Zenject;
 
 public class BoardSolverInstaller : MonoInstaller
 {
-    private SolveSlotsDetecor _solveSlotsDetecor;
     private BoardSolver _boardSolver;
     public override void InstallBindings()
     {
@@ -12,9 +11,12 @@ public class BoardSolverInstaller : MonoInstaller
         var boardFiller = Container.Resolve<IBoardFiller>();
         var sequenceDetectors = Container.Resolve<IEnumerable<ISequenceDetector>>();
         var boostExecuter = Container.Resolve<BoostExicuter>();
+        SolveSlotsDetecor solveSlotsDetecor = new(sequenceDetectors, board);
 
-        _solveSlotsDetecor = new(sequenceDetectors, board);
-        _boardSolver = new(_solveSlotsDetecor, itemSwaper, boardFiller, board, boostExecuter);
+
+        Workers workers = new(solveSlotsDetecor, board, boardFiller);
+
+        _boardSolver = new(workers, itemSwaper, boostExecuter);
 
         Container.Bind<BoardSolver>().FromInstance(_boardSolver).AsSingle().NonLazy();
     }
