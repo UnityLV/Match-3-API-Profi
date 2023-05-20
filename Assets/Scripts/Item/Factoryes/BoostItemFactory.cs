@@ -25,7 +25,7 @@ public class BoostItemFactory : ConfigFactory<BoostTypes, IBoostItem>
     private void InitBoost(IBoostItem boostItem, BoostTypes type)
     {
         boostItem.SetId((int)type);      
-        boostItem.SetBoostType(type);        
+        boostItem.Init(type);        
         boostItem.SetState(ItemStateTypes.Boost);
         boostItem.SetStateObserver(_itemStateObserver);
     }

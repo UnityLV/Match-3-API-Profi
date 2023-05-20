@@ -14,7 +14,6 @@ public class ToolsExecutor : MonoBehaviour
     private SwaperTool _swaperTool;
     private XLinerTool xLinerTool;
 
-
     private ITool _selectedTool;
 
     [Inject]
@@ -22,7 +21,7 @@ public class ToolsExecutor : MonoBehaviour
     [Inject]
     private ItemSwaper _itemSwaper;
     [Inject]
-    private BoostExicuter _boostExicuter;
+    private IBoostExicuter _boostExicuter;
 
     private bool _isInputActive = true;
 

@@ -6,16 +6,15 @@ public class RainbowBoostAction : IBoostAction
 {
     private Board _board;
     private ItemNextStateMover _itemRemover;
-    private BoostExicuter _boostExicuter;
+    private IBoostExicuter _boostExicuter;
     private BoardClearer _boardClearer;
 
-    public RainbowBoostAction(Board board, ItemNextStateMover itemRemover, BoostExicuter boostExicuter)
+    public RainbowBoostAction(Board board, IBoostExicuter boostExicuter)
     {
         _board = board;
-        _itemRemover = itemRemover;
+        _itemRemover = new();
         _boostExicuter = boostExicuter;
         _boardClearer = new(board);
-
     }
 
     public async UniTask Execute(IItem item)

@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = nameof(ItemStateTypesSpriteBinds), menuName = "ScriptableObjects/" + nameof(ItemStateTypesSpriteBinds), order = 1)]
 public class ItemStateTypesSpriteBinds : ScriptableObject

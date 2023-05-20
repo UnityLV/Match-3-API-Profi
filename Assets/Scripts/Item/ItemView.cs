@@ -24,15 +24,15 @@ public class ItemView : MonoBehaviour, IItemView
 
     public async UniTask MoveOn(float moveDuration,params Vector3[] path)
     {  
-        for (int pintIndex = 0; pintIndex < path.Length; pintIndex++)
+        for (int pointIndex = 0; pointIndex < path.Length; pointIndex++)
         {
-            bool isLastPoint = pintIndex == path.Length - 1;
+            bool isLastPoint = pointIndex == path.Length - 1;
             if (isLastPoint)
             {
-                await NormalMove(path[pintIndex], moveDuration * 2).SetEase(Ease.OutBack).AsyncWaitForCompletion();
+                await NormalMove(path[pointIndex], moveDuration * 2).SetEase(Ease.OutBack).AsyncWaitForCompletion();
                 break;
             }
-            await NormalMove(path[pintIndex], moveDuration).SetEase(Ease.Linear).AsyncWaitForCompletion();
+            await NormalMove(path[pointIndex], moveDuration).SetEase(Ease.Linear).AsyncWaitForCompletion();
         }        
     }
 

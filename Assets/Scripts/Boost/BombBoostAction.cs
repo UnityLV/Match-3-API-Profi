@@ -8,13 +8,13 @@ public class BombBoostAction : IBoostAction
     private const float BombRadius = 2f;
     private Board _board;
     private ItemNextStateMover _itemRemover;
-    private BoostExicuter _boostExicuter;
+    private IBoostExicuter _boostExicuter;
     private BoardClearer _boardClearer;
 
-    public BombBoostAction(Board board, ItemNextStateMover itemRemover, BoostExicuter boostExicuter)
+    public BombBoostAction(Board board,  IBoostExicuter boostExicuter)
     {
         _board = board;
-        _itemRemover = itemRemover;
+        _itemRemover = new();
         _boostExicuter = boostExicuter;
         _boardClearer = new(board);
     }

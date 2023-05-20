@@ -1,7 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
-using Zenject;
 
 public class Item : MonoBehaviour, IItem, IPooleable
 {

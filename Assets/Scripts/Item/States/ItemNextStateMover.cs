@@ -1,7 +1,6 @@
 ﻿using Cysharp.Threading.Tasks;
 using UnityEngine;
 using System.Linq;
-using System.Threading.Tasks;
 
 public class ItemNextStateMover
 {

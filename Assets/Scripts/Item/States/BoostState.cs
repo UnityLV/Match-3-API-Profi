@@ -1,6 +1,5 @@
 ﻿using Cysharp.Threading.Tasks;
 using System;
-using UnityEngine.Events;
 
 public class BoostState : ItemState
 {

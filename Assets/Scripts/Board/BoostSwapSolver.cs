@@ -3,10 +3,10 @@ using UnityEngine.Events;
 
 public class BoostSwapSolver : ISwapSolwer
 {
-    private BoostExicuter _boostExicuter;
+    private IBoostExicuter _boostExicuter;
     private UnityAction _swapCallback;
 
-    public BoostSwapSolver(BoostExicuter boostExicuter, UnityAction swapCallback)
+    public BoostSwapSolver(IBoostExicuter boostExicuter, UnityAction swapCallback)
     {
         _boostExicuter = boostExicuter;
         _swapCallback = swapCallback;

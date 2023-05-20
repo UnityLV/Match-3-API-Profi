@@ -1,7 +1,4 @@
 using Assets.Scripts.Code.Bank;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Assets.Scripts.Code.UI

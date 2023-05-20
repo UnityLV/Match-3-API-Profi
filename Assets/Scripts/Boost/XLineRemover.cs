@@ -2,9 +2,9 @@
 
 public class XLineRemover : BoostLineRemoverBase
 {
-    private BoostExicuter _boostExicuter;
+    private IBoostExicuter _boostExicuter;
 
-    public XLineRemover(Board board, ItemNextStateMover itemRemover, BoostExicuter boostExicuter) : base(board, itemRemover)
+    public XLineRemover(Board board,  IBoostExicuter boostExicuter) : base(board)
     {
         Directons = new GridPosition[] { GridPosition.Left, GridPosition.Right, GridPosition.Up, GridPosition.Down };
         _boostExicuter = boostExicuter;

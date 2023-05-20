@@ -1,6 +1,4 @@
 using Assets.Scripts.Code.Bank;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PurchaseController : MonoBehaviour

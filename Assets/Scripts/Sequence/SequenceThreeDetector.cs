@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-public class SequenceThreeDetector : BaseSequenceDetector
+﻿public class SequenceThreeDetector : BaseSequenceDetector
 {
     
 

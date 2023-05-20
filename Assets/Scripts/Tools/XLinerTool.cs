@@ -1,15 +1,11 @@
-﻿using System;
-using System.Threading;
-using Cysharp.Threading.Tasks;
-using UnityEngine;
-using UnityEngine.Events;
+﻿using Cysharp.Threading.Tasks;
 
 public class XLinerTool : SingleCellTool
 {
 
-    private BoostExicuter _boostExicuter;
+    private IBoostExicuter _boostExicuter;
 
-    public XLinerTool(CellSelector cellSelector, BoardSolver boardSolver, BoostExicuter boostExicuter) : base(cellSelector, boardSolver)
+    public XLinerTool(CellSelector cellSelector, BoardSolver boardSolver, IBoostExicuter boostExicuter) : base(cellSelector, boardSolver)
     {
         _boostExicuter = boostExicuter;
     }

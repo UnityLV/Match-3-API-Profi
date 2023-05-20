@@ -3,14 +3,14 @@ using UnityEngine.Events;
 
 public class BoardSolver
 {
-    private BoostExicuter _boostExicuter;
+    private IBoostExicuter _boostExicuter;
     private SequenceSolver _sequenceSolver;
     private ISwapSolwer _regularSwapSolver;
     private ISwapSolwer _boostSwapSolver;
 
     public event UnityAction CountedSwapMaked;
 
-    public BoardSolver(Workers workers, ItemSwaper itemSwaper, BoostExicuter boostExicuter)
+    public BoardSolver(Workers workers, ItemSwaper itemSwaper, IBoostExicuter boostExicuter)
     {
         _boostExicuter = boostExicuter;
         _sequenceSolver = new(workers);

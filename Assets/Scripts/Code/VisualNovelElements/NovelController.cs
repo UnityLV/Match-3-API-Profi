@@ -1,7 +1,4 @@
 using Assets.Scripts.Code.Bank;
-using Assets.Scripts.Code.UI;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class NovelController : MonoBehaviour, IInit<DialogEnd>

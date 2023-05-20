@@ -8,10 +8,10 @@ public abstract class BoostLineRemoverBase : IBoostAction
     private ItemNextStateMover _itemNextStateMover;
     private BoardClearer _boardClearer;
 
-    protected BoostLineRemoverBase(Board board, ItemNextStateMover itemRemover)
+    protected BoostLineRemoverBase(Board board)
     {
         _board = board;
-        _itemNextStateMover = itemRemover;
+        _itemNextStateMover = new();
         _boardClearer = new(board);
     }
 

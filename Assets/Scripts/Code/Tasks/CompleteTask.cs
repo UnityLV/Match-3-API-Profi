@@ -1,9 +1,4 @@
-using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks.Sources;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Assets.Scripts.Code.UI
 {

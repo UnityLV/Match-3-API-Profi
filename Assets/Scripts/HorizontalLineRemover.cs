@@ -3,11 +3,11 @@ using Cysharp.Threading.Tasks;
 
 public class HorizontalLineRemover : BoostLineRemoverBase
 {
-    private BoostExicuter _boostExicuter;
+    private IBoostExicuter _boostExicuter;
 
     private BoostTypes _boostType = BoostTypes.Horizontal;
 
-    public HorizontalLineRemover(Board board, ItemNextStateMover itemRemover, BoostExicuter boostExicuter) : base(board, itemRemover)
+    public HorizontalLineRemover(Board board, IBoostExicuter boostExicuter) : base(board)
     {
         Directons = new GridPosition[] { GridPosition.Left,GridPosition.Right};
         _boostExicuter = boostExicuter;
@@ -17,7 +17,7 @@ public class HorizontalLineRemover : BoostLineRemoverBase
     {
         if (boost.GetBoostType() == _boostType)
         {
-            boost.SetBoostType(BoostTypes.Vertical);
+            boost.Init(BoostTypes.Vertical);
         }
         await _boostExicuter.Execute(boost);
     }

@@ -1,9 +1,6 @@
-﻿using UnityEngine;
-
-public interface IBoostItem : IItem
+﻿public interface IBoostItem : IItem
 {
     BoostTypes GetBoostType();
-    void SetBoostType(BoostTypes value);   
-
-
+    void Init(BoostTypes value);
+    bool IsUsed { get; set; }
 }

@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using Zenject;
-using Cysharp.Threading.Tasks;
 
 
 public class BoostInjector : MonoBehaviour

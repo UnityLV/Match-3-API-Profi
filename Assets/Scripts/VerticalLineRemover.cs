@@ -2,11 +2,11 @@
 
 public class VerticalLineRemover : BoostLineRemoverBase
 {
-    private BoostExicuter _boostExicuter;
+    private IBoostExicuter _boostExicuter;
 
     private BoostTypes _boostType = BoostTypes.Vertical;
 
-    public VerticalLineRemover(Board board, ItemNextStateMover itemRemover, BoostExicuter boostExicuter) : base(board, itemRemover)
+    public VerticalLineRemover(Board board, IBoostExicuter boostExicuter) : base(board)
     {
         Directons = new GridPosition[] { GridPosition.Up, GridPosition.Down };
         _boostExicuter = boostExicuter;
@@ -16,7 +16,7 @@ public class VerticalLineRemover : BoostLineRemoverBase
     {
         if (boost.GetBoostType() == _boostType)
         {
-            boost.SetBoostType(BoostTypes.Horizontal);
+            boost.Init(BoostTypes.Horizontal);
         }
         await _boostExicuter.Execute(boost);
     }

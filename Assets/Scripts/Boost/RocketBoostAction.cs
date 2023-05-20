@@ -5,18 +5,19 @@ public class RocketBoostAction : IBoostAction
     private Board _board;
     private GoalCellOnBoardFinder _goalItemFinder;
     private ItemNextStateMover _itemRemover;
-    private BoostExicuter _boostExicuter;
+    private IBoostExicuter _boostExicuter;
     private BoardClearer _boardClearer;
     private NeighbourRemover _neighbourRemover;
 
     private ICell _executedOnCell;
 
+
     public RocketBoostAction(Board board,
             GoalCellOnBoardFinder goalItemFinder,
-            ItemNextStateMover itemRemover, BoostExicuter boostExicuter)
+           IBoostExicuter boostExicuter)
     {
         _goalItemFinder = goalItemFinder;
-        _itemRemover = itemRemover;
+        _itemRemover = new();
         _boostExicuter = boostExicuter;
         _board = board;
         _boardClearer = new(board);
