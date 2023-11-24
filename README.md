@@ -1,4 +1,9 @@
 # Lara-Story-
+
+Проект был сделан за 2 недели
+
+Прочитав код оставь коментарий под репозиторием
+
 https://play.google.com/store/apps/details?id=com.GamezMonster.Larastory&hl=ru
 
 ![browser_IgiTk3jqNE](https://github.com/UnityLV/Lara-Story-/assets/104660372/f241c5cf-1d84-416f-80a8-5916db4bfdac)
